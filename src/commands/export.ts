@@ -21,8 +21,6 @@ const command: GluegunCommand = {
     const contents: string[] = (await deepReadDir(folder!)).flat(
       Number.POSITIVE_INFINITY
     );
-    console.log(contents);
-    console.log(toolbox.filesystem.separator);
 
     const filteredItems = contents
       .filter((item) => {

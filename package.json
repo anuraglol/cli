@@ -1,7 +1,7 @@
 {
-  "name": "cli",
+  "name": "export",
   "version": "0.0.1",
-  "description": "cli CLI",
+  "description": "export",
   "private": true,
   "bin": {
     "cli": "bin/cli"
