@@ -18,9 +18,9 @@ const command: GluegunCommand = {
       return error(colors.red("Missing `folder` parameter"));
     }
 
-    const contents: string[] = (await deepReadDir(folder!)).flat(
-      Number.POSITIVE_INFINITY
-    );
+    const contents: string[] = (
+      await deepReadDir(folder!, filesystem.separator)
+    ).flat(Number.POSITIVE_INFINITY);
 
     const filteredItems = contents
       .filter((item) => {
